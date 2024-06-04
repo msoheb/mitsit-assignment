@@ -4,7 +4,7 @@
 
 - [x] - Intial Commit
 - [x] - CSS3 Reset
-- [ ] - Folder Structure
+- [x] - Folder Structure
 - [ ] - Error Boundary
 - [ ] - Components
 - [ ] - Function Implementation
