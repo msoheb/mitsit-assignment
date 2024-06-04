@@ -1,3 +1,29 @@
-.text {
-  color: blue;
+.tableContainer {
+  overflow-x: auto;
+  width: calc(100% - 2rem);
+  padding: 0 1rem;
+}
+
+.table {
+  background: white;
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto 10rem auto;
+}
+
+.table th {
+  border: 1px solid black;
+  padding: 1rem;
+  cursor: pointer;
+}
+.table th:hover {
+  background: black;
+  color: white;
+}
+
+.table td {
+  border: 1px solid black;
+  padding: 0.425rem 1rem;
 }

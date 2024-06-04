@@ -8,4 +8,10 @@
 - [x] - Sorting
 - [x] - Pagination
 - [x] - Refactoring
-- [ ] - Styling
+- [x] - Styling
+
+### Build with React version `18.2`.
+
+### Package Manger `pnpm`.
+
+#### To run locally, run `pnpm install` and `pnpm dev`

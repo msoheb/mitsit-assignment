@@ -20,6 +20,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: sans-serif;
 }
 /*
   5. Improve media defaults
@@ -59,4 +60,12 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* App.jsx styles */
+.app h1 {
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  text-decoration: underline;
+  text-align: center;
 }

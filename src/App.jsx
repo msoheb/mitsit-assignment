@@ -67,8 +67,8 @@ const App = () => {
   }, [state.limit, state.skip]);
 
   return (
-    <div>
-      MITSIT ASSIGNMENT
+    <div className="app">
+      <h1>MITSIT ASSIGNMENT</h1>
       <Table list={state.products} handleSort={handleSort} />
       <Pagination pagination={pagination} dispatch={dispatch} />
     </div>
