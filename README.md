@@ -7,4 +7,5 @@
 - [x] - Folder Structure
 - [x] - Sorting
 - [x] - Pagination
+- [x] - Refactoring
 - [ ] - Styling

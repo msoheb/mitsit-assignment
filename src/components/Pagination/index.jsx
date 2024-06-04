@@ -1,16 +1,14 @@
 import Proptypes from "prop-types";
 // import styles from "./index.module.css";
 
-const Pagination = ({ pagination, handlePagination }) => {
+const Pagination = ({ pagination, dispatch }) => {
   const isNextDisabled = pagination.skip + pagination.limit >= pagination.total;
 
   return (
-    <>
+    <div>
       <select
         value={pagination.limit}
-        onChange={(e) =>
-          handlePagination({ action: "limit", limit: e.target.value })
-        }
+        onChange={(e) => dispatch({ type: "LIMIT", payload: e.target.value })}
       >
         <option value="10">10</option>
         <option value="25">25</option>
@@ -19,35 +17,35 @@ const Pagination = ({ pagination, handlePagination }) => {
       </select>
       <button
         disabled={pagination.skip === 0}
-        onClick={() => handlePagination({ action: "first" })}
+        onClick={() => dispatch({ type: "FIRST" })}
       >
         First
       </button>
       <button
         disabled={pagination.skip === 0}
-        onClick={() => handlePagination({ action: "previous" })}
+        onClick={() => dispatch({ type: "PREVIOUS" })}
       >
         Previous
       </button>
       <button
         disabled={isNextDisabled}
-        onClick={() => handlePagination({ action: "next" })}
+        onClick={() => dispatch({ type: "NEXT" })}
       >
         Next
       </button>
       <button
         disabled={isNextDisabled}
-        onClick={() => handlePagination({ action: "last" })}
+        onClick={() => dispatch({ type: "LAST" })}
       >
         Last
       </button>
-    </>
+    </div>
   );
 };
 
 Pagination.propTypes = {
   pagination: Proptypes.object.isRequired,
-  handlePagination: Proptypes.func.isRequired,
+  dispatch: Proptypes.func.isRequired,
 };
 
 export default Pagination;
