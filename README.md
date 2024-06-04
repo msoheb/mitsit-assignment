@@ -6,5 +6,5 @@
 - [x] - CSS3 Reset
 - [x] - Folder Structure
 - [x] - Sorting
-- [ ] - Pagination
+- [x] - Pagination
 - [ ] - Styling
