@@ -3,7 +3,7 @@
 ## TODO
 
 - [x] - Intial Commit
-- [ ] - CSS3 Reset
+- [x] - CSS3 Reset
 - [ ] - Folder Structure
 - [ ] - Error Boundary
 - [ ] - Components
